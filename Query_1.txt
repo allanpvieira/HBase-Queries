@@ -1,0 +1,67 @@
+create 'emp','br'
+
+put 'emp','1','br:nome','Joao'
+put 'emp','1','br:idade','31'
+put 'emp','1','br:funcao','Tecnico'
+put 'emp','1','br:cidade','Curitiba'
+put 'emp','1','br:bairro','bairro1'
+
+put 'emp','2','br:nome','Maria'
+put 'emp','2','br:idade','42'
+put 'emp','2','br:funcao','Analista'
+put 'emp','2','br:cidade','Matinhos'
+put 'emp','2','br:bairro','bairro2'
+
+put 'emp','3','br:nome','Bruno'
+put 'emp','3','br:idade','53'
+put 'emp','3','br:funcao','Contador'
+put 'emp','3','br:cidade','Antonina'
+put 'emp','3','br:bairro','bairro3'
+
+put 'emp','4','br:nome','Rodolfo'
+put 'emp','4','br:idade','24'
+put 'emp','4','br:funcao','Adm'
+put 'emp','4','br:cidade','Paranagua'
+put 'emp','4','br:bairro','bairro4'
+
+put 'emp','5','br:nome','Manoel'
+put 'emp','5','br:idade','35'
+put 'emp','5','br:funcao','Medico'
+put 'emp','5','br:cidade','Pinhais'
+put 'emp','5','br:bairro','bairro5'
+
+put 'emp','6','br:nome','Leticia'
+put 'emp','6','br:idade','46'
+put 'emp','6','br:funcao','Dentista'
+put 'emp','6','br:cidade','Colombo'
+put 'emp','6','br:bairro','bairro6'
+
+2 – Salvar os comandos put em um arquivo txt
+
+3 - Atualizar os dados de todos os empregados, alterando os cidades para cidade1, cidade2.........
+put 'emp','1','br:bairro','cidade1'
+put 'emp','2','br:bairro','cidade2'
+put 'emp','3','br:bairro','cidade3'
+put 'emp','4','br:bairro','cidade4'
+put 'emp','5','br:bairro','cidade5'
+put 'emp','6','br:bairro','cidade6'
+
+
+4 – Deletar a empregada Leticia
+deleteall 'emp', '6',
+
+5 – Selecionar apenas a célula que contém o nome do primeiro empregado.
+get 'emp', '1', 'br:nome'
+
+6 - Deletar a cidade do empregado 2
+delete 'emp', '2', 'br:bairro'
+
+7 – Contar os registros da tbl emp  
+count 'emp'
+
+8 – Limpar a tbl emp
+Truncate 'emp'
+
+9 - Apagar a tbl emp
+Disable 'emp'
+Drop ‘emp’

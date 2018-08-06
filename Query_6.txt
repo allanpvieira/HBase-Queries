@@ -1,0 +1,16 @@
+//chave = estabelecimento(2 digitos) + nota (2 digitos)
+
+create 'nota3', 'nf', 'nfs', 'ct'
+
+for dia in 1..5 do
+for n in ['nf','nfs','ct'] do
+for i5 in ['al','ag','vc'] do
+for i4 in 0..1 do
+for i3 in 0..1 do
+for i1 in ['co','mu','pa'] do
+put 'nota3', "#{i1}#{i3}#{i4}", "#{n}:cpf", "#{i5}"
+put 'nota3', "#{i1}#{i3}#{i4}", "#{n}:valor", "#{15+rand(79)}"
+put 'nota3', "#{i1}#{i3}#{i4}", "#{n}:dia", "#{dia}"
+end end end end end end
+
+scan 'nota3', {FILTER=>"RowFilter(=,'binaryprefix:pa')"}

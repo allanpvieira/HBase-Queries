@@ -1,0 +1,1 @@
+for i in 0..999 do put 'short_url', "www.allan.com/#{i}", 'r1:short_url', "short.url/#{i}" end

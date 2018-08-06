@@ -1,0 +1,9 @@
+create 'frota', 'gps'
+
+for i in 'a'..'z' do 
+for i2 in 'a'..'z' do
+for i3 in 'a'..'z' do
+for i4 in 'a'..'z' do
+for j in 0..9 do 
+for k in 0..9 do 
+put 'frota', "#{i}#{i2}#{i3}#{i4}", "gps:#{j}#{j}#{k}#{k}", "#{i}#{i2}#{i3}#{i4}#{j}#{j}#{k}#{k}" end end end end end end

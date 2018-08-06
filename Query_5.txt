@@ -1,0 +1,7 @@
+create 'twitter', 'br', 'usa'
+
+
+//Script de usuário [j][k] recebendo mensagem de [k][j]
+for j in 0..9 do 
+for k in 0..9 do 
+put 'twitter', "#{j}#{k}", "br:#{k}#{j}", "Generic Message..." end end
